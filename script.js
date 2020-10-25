@@ -7,18 +7,23 @@ let questArr = [{
 },
 { 
     question:"Which of the following functions of an array object adds one or more elements to the front of an array and pushes the rest of the items one slot back?",
-    choices:["unshift()","sort( )","toString( )","join( )"],
+    choices:["sort( )","toString( )","unshift()","join( )"],
     response:"unshift()",
 },
 {
     question:"Which of the following functions deletes an item from an array?",
-    choices:["pop()", "delete()","remove()","banish()"],
+    choices:["delete()","pop()", "remove()","banish()"],
     response:"pop()",
 },
 {
     question:"Which would you use to add an Event Listener in JQuery?",
     choices:[".addEventListener()", ".on()",".addEL()",".add()"],
     response:".on()",
+},
+{
+    question:"Where does your javascript source go in HTML?",
+    choices:["inside a footer", "inside the head","in a div","above the body closing tag"],
+    response:"above the body closing tag",
 }
 ]
 
@@ -115,7 +120,7 @@ function start() {
     
     //deduct 15seconds from the timer if user chooses an incorrect answer
     function incorrect() {
-    timeLeft -= 15; 
+    timeLeft -= 20; 
     next();
     }
     
@@ -134,7 +139,7 @@ function start() {
         return;
     }
     
-    let quizContent = "<h2>" + questArr[currentQuestion] + "</h2>"
+    let quizContent = "<h2>" + questArr[currentQuestion].question + "</h2>"
     
     for (let buttonLoop = 0; buttonLoop < questArr[currentQuestion].choices.length; buttonLoop++) {
     let buttonCode = "<button onclick=\"[ANS]\">[CHOICE]</button>"; 
