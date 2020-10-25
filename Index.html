@@ -19,28 +19,26 @@
         </div>
     </div>
     <!-- main body of quiz -->
-    <div class="container">
-        <div class="col-md-12" id="top-div">
-            <h2 id="question"></h2>
-            <div id="choices">
-                <button type="button" class="btn btn-dark" id="choiceOne" value="1"></button>
-                <button type="button" class="btn btn-dark" id="choiceTwo" value="2"></button>
-                <button type="button" class="btn btn-dark" id="choiceThree" value="3"></button>
-                <button type="button" class="btn btn-dark" id="choiceFour" value="4"></button>
-            </div>
-            <div id="message">
-                <h1>Code Quiz Challenge</h1>
-                <p>These are a HTML, CSS, and Javascript multiple choices questions.</p>
-                <p>You will have 2 minute (120s) to answer all the questions.</p>
-                <p>Keep in mind wrong answer will be penalised in 20 second minus from your remaining time.</p>
-                <div class="col-md-6" id="buttonDiv">
-                <button type="button" class="btn btn-dark" id="startButton">StartQuiz</button>
-                </div>
-            </div>
-            <hr>
-            <div class="response"></div>
+    <div id="quiz">
+        <div id="quizBody">      
+            <h1>   
+                JavaScript Quiz!
+            </h1>
+            <h3>
+                Click to play!   
+            </h3>
+            <button onclick=start()>Start!</button>
         </div>
     </div>
+    <hr>
+</div>
+</div>
+<div id="message">
+    <h1>Code Quiz Challenge</h1>
+        <p>These are a HTML, CSS, and Javascript multiple choices questions.</p>
+        <p>You will have 2 minute (120s) to answer all the questions.</p>
+        <p>Keep in mind wrong answer will be penalised in 20 second minus from your remaining time.</p>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
